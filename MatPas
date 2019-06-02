@@ -1,0 +1,374 @@
+<html>
+	<head>
+		<meta charset="ufc-8">
+	</head>
+	<style>
+	body {
+	 -webkit-animation: colorchange 60s infinite; 
+    animation: colorchange 60s infinite;
+	}
+	@-webkit-keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+	</style>
+	<body>
+	<h1 align="center" > Matematikos Pasaulis</h1>
+	<p style="text-align:center" >Išsprekite uždavinius į tarpus įrašydami pasirinkta ženklą </p>
+	<p style="text-align:center"> 
+	Užduotis yra išspresta jeigu dešinėje vietoj - atsiranda +.
+	Kai visur gausite + spauskite tikrinti visus ir laimėsite.
+	</p> 
+	<h2 style="text-align:center" > Pirmasis uždavinys (Gali būti 2 atsakymai) </h2>
+	<p style="text-align:center">
+	<button>(1</button>
+	<button id="v1" onclick=pakeiskž01()>+</button>
+	<button>2</button>
+	<button id="v2" onclick=pakeiskž02()>+</button>
+	<button>3)</button>
+	<button id="v3" onclick=pakeiskž03()>+</button>
+	<button>4</button>
+	<button id="v4" onclick=pakeiskž04()>+</button>
+	<button>5</button>
+	<button> = </button>
+	<button> 120 </button>
+	<button id="vv1" onclick=tikrink1()>Tinkrink</button>
+	<button id="ats1">-</button>
+	</p>
+	<br> </br>
+	<h2 style="text-align:center" > Antrasis uždavinys </h2>
+	<p style="text-align:center">
+	<button>(6</button>
+	<button id="v5" onclick=pakeiskž05()>+</button>
+	<button>7</button>
+	<button id="v6" onclick=pakeiskž06()>+</button>
+	<button>8</button>
+	<button id="v7" onclick=pakeiskž07()>+</button>
+	<button>9)</button>
+	<button id="v8" onclick=pakeiskž08()>+</button>
+	<button>10</button>
+	<button> = </button>
+	<button> 3 </button>
+	<button id="vv2" onclick=tikrink2()>Tinkrink</button>
+	<button id="ats2">-</button>
+	</p>
+	<br> </br>
+	<h2 style="text-align:center" > Trečiasis uždavinys </h2>
+	<p style="text-align:center" >
+	<button> (11 </button>
+	<button id="v9" onclick=pakeiskž09()>+</button>
+	<button>12</button>
+	<button id="v10" onclick=pakeiskž10()>+</button>
+	<button>13</button>
+	<button id="v11" onclick=pakeiskž11()>+</button>
+	<button>14)</button>
+	<button id="v12" onclick=pakeiskž12()>+</button>
+	<button>15</button>
+	<button> = </button>
+	<button> 330 </button>
+	<button id="vv3" onclick=tikrink3()>Tinkrink</button>
+	<button id="ats3">-</button>
+	</p>
+	<br> </br>
+	<h2 style="text-align:center" > Ketvirtasis uždavinys </h2>
+	<p style="text-align:center"> 
+	<button>(6</button>
+	<button id="v13" onclick=pakeiskž13()>+</button>
+	<button>2</button>
+	<button id="v14" onclick=pakeiskž14()>+</button>
+	<button>4</button>
+	<button id="v15" onclick=pakeiskž15()>+</button>
+	<button>12)</button>
+	<button id="v16" onclick=pakeiskž16()>+</button>
+	<button>3</button>
+	<button> = </button>
+	<button>8</button>
+	<button id="vv4" onclick=tikrink4()>Tinkrink</button>
+	<button id="ats4">-</button>
+	</p>
+	<br> </br>
+	<h2 style="text-align:center" > Penktasis uždavinys </h2>
+	<p style="text-align:center" >
+	<button>(100</button>
+	<button id="v17" onclick=pakeiskž17()>+</button>
+	<button>20</button>
+	<button id="v18" onclick=pakeiskž18()>+</button>
+	<button>4</button>
+	<button id="v19" onclick=pakeiskž19()>+</button>
+	<button>11)</button>
+	<button id="v20" onclick=pakeiskž20()>+</button>
+	<button>12</button>
+	<button> = </button>
+	<button>1</button>
+	<button id="vv5" onclick=tikrink5()>Tinkrink</button>
+	<button id="ats5">-</button>
+	</p>
+	<br> </br>
+	<p style="text-align:center"> <button id="vv6" onclick=tikrinkv()>Tikrinti visus</button> </p>
+	<br> </br>
+		<script>
+			function pakeiskž01()
+			{
+			if (document.getElementById("v1").innerHTML=="+")
+					document.getElementById("v1").innerHTML="-";
+				else if (document.getElementById("v1").innerHTML=="-")
+					document.getElementById("v1").innerHTML="x";
+				else if (document.getElementById("v1").innerHTML=="x")
+					document.getElementById("v1").innerHTML="/";
+				else if (document.getElementById("v1").innerHTML=="/")
+					document.getElementById("v1").innerHTML="+";
+			}
+			function pakeiskž02()
+			{
+			if (document.getElementById("v2").innerHTML=="+")
+					document.getElementById("v2").innerHTML="-";
+				else if (document.getElementById("v2").innerHTML=="-")
+					document.getElementById("v2").innerHTML="x";
+				else if (document.getElementById("v2").innerHTML=="x")
+					document.getElementById("v2").innerHTML="/";
+				else if (document.getElementById("v2").innerHTML=="/")
+					document.getElementById("v2").innerHTML="+";
+			}
+			function pakeiskž03()
+			{
+			if (document.getElementById("v3").innerHTML=="+")
+					document.getElementById("v3").innerHTML="-";
+				else if (document.getElementById("v3").innerHTML=="-")
+					document.getElementById("v3").innerHTML="x";
+				else if (document.getElementById("v3").innerHTML=="x")
+					document.getElementById("v3").innerHTML="/";
+				else if (document.getElementById("v3").innerHTML=="/")
+					document.getElementById("v3").innerHTML="+";
+			}
+			function pakeiskž04()
+			{
+			if (document.getElementById("v4").innerHTML=="+")
+					document.getElementById("v4").innerHTML="-";
+				else if (document.getElementById("v4").innerHTML=="-")
+					document.getElementById("v4").innerHTML="x";
+				else if (document.getElementById("v4").innerHTML=="x")
+					document.getElementById("v4").innerHTML="/";
+				else if (document.getElementById("v4").innerHTML=="/")
+					document.getElementById("v4").innerHTML="+";
+			}
+			function tikrink1()
+			{
+			if (document.getElementById("v1").innerHTML=="x" && document.getElementById("v2").innerHTML=="x" && document.getElementById("v3").innerHTML=="x" && document.getElementById("v4").innerHTML=="x" && document.getElementById("ats1").innerHTML=="-")
+			 document.getElementById("ats1").innerHTML="+";
+			else if (document.getElementById("v1").innerHTML=="+" && document.getElementById("v2").innerHTML=="+" && document.getElementById("v3").innerHTML=="x" && document.getElementById("v4").innerHTML=="x" && document.getElementById("ats1").innerHTML=="-")
+			 document.getElementById("ats1").innerHTML="+";
+			else alert("Bandyk dar kartą");
+			}
+			function pakeiskž05()
+			{
+			if (document.getElementById("v5").innerHTML=="+")
+					document.getElementById("v5").innerHTML="-";
+				else if (document.getElementById("v5").innerHTML=="-")
+					document.getElementById("v5").innerHTML="x";
+				else if (document.getElementById("v5").innerHTML=="x")
+					document.getElementById("v5").innerHTML="/";
+				else if (document.getElementById("v5").innerHTML=="/")
+					document.getElementById("v5").innerHTML="+";
+			}
+			function pakeiskž06()
+			{
+			if (document.getElementById("v6").innerHTML=="+")
+					document.getElementById("v6").innerHTML="-";
+				else if (document.getElementById("v6").innerHTML=="-")
+					document.getElementById("v6").innerHTML="x";
+				else if (document.getElementById("v6").innerHTML=="x")
+					document.getElementById("v6").innerHTML="/";
+				else if (document.getElementById("v6").innerHTML=="/")
+					document.getElementById("v6").innerHTML="+";
+			}
+			function pakeiskž07()
+			{
+			if (document.getElementById("v7").innerHTML=="+")
+					document.getElementById("v7").innerHTML="-";
+				else if (document.getElementById("v7").innerHTML=="-")
+					document.getElementById("v7").innerHTML="x";
+				else if (document.getElementById("v7").innerHTML=="x")
+					document.getElementById("v7").innerHTML="/";
+				else if (document.getElementById("v7").innerHTML=="/")
+					document.getElementById("v7").innerHTML="+";
+			}
+			function pakeiskž08()
+			{
+			if (document.getElementById("v8").innerHTML=="+")
+					document.getElementById("v8").innerHTML="-";
+				else if (document.getElementById("v8").innerHTML=="-")
+					document.getElementById("v8").innerHTML="x";
+				else if (document.getElementById("v8").innerHTML=="x")
+					document.getElementById("v8").innerHTML="/";
+				else if (document.getElementById("v8").innerHTML=="/")
+					document.getElementById("v8").innerHTML="+";
+			}
+			function tikrink2()
+			{
+			if (document.getElementById("v5").innerHTML=="+" && document.getElementById("v6").innerHTML=="+" && document.getElementById("v7").innerHTML=="+" && document.getElementById("v8").innerHTML=="/" && document.getElementById("ats2").innerHTML=="-")
+			  document.getElementById("ats2").innerHTML="+";
+			else alert("Bandyk dar kartą");
+			}
+			function pakeiskž09()
+			{
+			if (document.getElementById("v9").innerHTML=="+")
+					document.getElementById("v9").innerHTML="-";
+				else if (document.getElementById("v9").innerHTML=="-")
+					document.getElementById("v9").innerHTML="x";
+				else if (document.getElementById("v9").innerHTML=="x")
+					document.getElementById("v9").innerHTML="/";
+				else if (document.getElementById("v9").innerHTML=="/")
+					document.getElementById("v9").innerHTML="+";
+			}
+			function pakeiskž10()
+			{
+			if (document.getElementById("v10").innerHTML=="+")
+					document.getElementById("v10").innerHTML="-";
+				else if (document.getElementById("v10").innerHTML=="-")
+					document.getElementById("v10").innerHTML="x";
+				else if (document.getElementById("v10").innerHTML=="x")
+					document.getElementById("v10").innerHTML="/";
+				else if (document.getElementById("v10").innerHTML=="/")
+					document.getElementById("v10").innerHTML="+";
+			}
+			function pakeiskž11()
+			{
+			if (document.getElementById("v11").innerHTML=="+")
+					document.getElementById("v11").innerHTML="-";
+				else if (document.getElementById("v11").innerHTML=="-")
+					document.getElementById("v11").innerHTML="x";
+				else if (document.getElementById("v11").innerHTML=="x")
+					document.getElementById("v11").innerHTML="/";
+				else if (document.getElementById("v11").innerHTML=="/")
+					document.getElementById("v11").innerHTML="+";
+			}
+			function pakeiskž12()
+			{
+			if (document.getElementById("v12").innerHTML=="+")
+					document.getElementById("v12").innerHTML="-";
+				else if (document.getElementById("v12").innerHTML=="-")
+					document.getElementById("v12").innerHTML="x";
+				else if (document.getElementById("v12").innerHTML=="x")
+					document.getElementById("v12").innerHTML="/";
+				else if (document.getElementById("v12").innerHTML=="/")
+					document.getElementById("v12").innerHTML="+";
+			}
+			function tikrink3()
+			{
+			if (document.getElementById("v9").innerHTML=="+" && document.getElementById("v10").innerHTML=="+" && document.getElementById("v11").innerHTML=="-" && document.getElementById("v12").innerHTML=="x" && document.getElementById("ats3").innerHTML=="-")
+			  document.getElementById("ats3").innerHTML="+";
+			else alert("Bandyk dar kartą");
+			}
+			function pakeiskž13()
+			{
+			if (document.getElementById("v13").innerHTML=="+")
+					document.getElementById("v13").innerHTML="-";
+				else if (document.getElementById("v13").innerHTML=="-")
+					document.getElementById("v13").innerHTML="x";
+				else if (document.getElementById("v13").innerHTML=="x")
+					document.getElementById("v13").innerHTML="/";
+				else if (document.getElementById("v13").innerHTML=="/")
+					document.getElementById("v13").innerHTML="+";
+			}
+			function pakeiskž14()
+			{
+			if (document.getElementById("v14").innerHTML=="+")
+					document.getElementById("v14").innerHTML="-";
+				else if (document.getElementById("v14").innerHTML=="-")
+					document.getElementById("v14").innerHTML="x";
+				else if (document.getElementById("v14").innerHTML=="x")
+					document.getElementById("v14").innerHTML="/";
+				else if (document.getElementById("v14").innerHTML=="/")
+					document.getElementById("v14").innerHTML="+";
+			}
+			function pakeiskž15()
+			{
+			if (document.getElementById("v15").innerHTML=="+")
+					document.getElementById("v15").innerHTML="-";
+				else if (document.getElementById("v15").innerHTML=="-")
+					document.getElementById("v15").innerHTML="x";
+				else if (document.getElementById("v15").innerHTML=="x")
+					document.getElementById("v15").innerHTML="/";
+				else if (document.getElementById("v15").innerHTML=="/")
+					document.getElementById("v15").innerHTML="+";
+			}
+			function pakeiskž16()
+			{
+			if (document.getElementById("v16").innerHTML=="+")
+					document.getElementById("v16").innerHTML="-";
+				else if (document.getElementById("v16").innerHTML=="-")
+					document.getElementById("v16").innerHTML="x";
+				else if (document.getElementById("v16").innerHTML=="x")
+					document.getElementById("v16").innerHTML="/";
+				else if (document.getElementById("v16").innerHTML=="/")
+					document.getElementById("v16").innerHTML="+";
+			}
+			function tikrink4()
+			{
+			if (document.getElementById("v13").innerHTML=="/" && document.getElementById("v14").innerHTML=="x" && document.getElementById("v15").innerHTML=="+" && document.getElementById("v16").innerHTML=="/" && document.getElementById("ats4").innerHTML=="-")
+			  document.getElementById("ats4").innerHTML="+";
+			else alert("Bandyk dar kartą");
+			}
+			function pakeiskž17()
+			{
+			if (document.getElementById("v17").innerHTML=="+")
+					document.getElementById("v17").innerHTML="-";
+				else if (document.getElementById("v17").innerHTML=="-")
+					document.getElementById("v17").innerHTML="x";
+				else if (document.getElementById("v17").innerHTML=="x")
+					document.getElementById("v17").innerHTML="/";
+				else if (document.getElementById("v17").innerHTML=="/")
+					document.getElementById("v17").innerHTML="+";
+			}
+			function pakeiskž18()
+			{
+			if (document.getElementById("v18").innerHTML=="+")
+					document.getElementById("v18").innerHTML="-";
+				else if (document.getElementById("v18").innerHTML=="-")
+					document.getElementById("v18").innerHTML="x";
+				else if (document.getElementById("v18").innerHTML=="x")
+					document.getElementById("v18").innerHTML="/";
+				else if (document.getElementById("v18").innerHTML=="/")
+					document.getElementById("v18").innerHTML="+";
+			}
+			function pakeiskž19()
+			{
+			if (document.getElementById("v19").innerHTML=="+")
+					document.getElementById("v19").innerHTML="-";
+				else if (document.getElementById("v19").innerHTML=="-")
+					document.getElementById("v19").innerHTML="x";
+				else if (document.getElementById("v19").innerHTML=="x")
+					document.getElementById("v19").innerHTML="/";
+				else if (document.getElementById("v19").innerHTML=="/")
+					document.getElementById("v19").innerHTML="+";
+			}
+			function pakeiskž20()
+			{
+			if (document.getElementById("v20").innerHTML=="+")
+					document.getElementById("v20").innerHTML="-";
+				else if (document.getElementById("v20").innerHTML=="-")
+					document.getElementById("v20").innerHTML="x";
+				else if (document.getElementById("v20").innerHTML=="x")
+					document.getElementById("v20").innerHTML="/";
+				else if (document.getElementById("v20").innerHTML=="/")
+					document.getElementById("v20").innerHTML="+";
+			}
+			function tikrink5()
+			{
+			if (document.getElementById("v17").innerHTML=="/" && document.getElementById("v18").innerHTML=="-" && document.getElementById("v19").innerHTML=="+" && document.getElementById("v20").innerHTML=="/" && document.getElementById("ats5").innerHTML=="-")
+			  document.getElementById("ats5").innerHTML="+";
+			else alert("Bandyk dar kartą");
+			}
+			function tikrinkv()
+			{
+			if (document.getElementById("ats1").innerHTML=="+" && document.getElementById("ats2").innerHTML=="+" && document.getElementById("ats3").innerHTML=="+" && document.getElementById("ats4").innerHTML=="+" && document.getElementById("ats5").innerHTML=="+")
+				alert("Laimėjai");
+			else alert("NU NU NU!!! Dar nelaimėjai")
+			}
+		</script>
+	</body>
+
+</html>
